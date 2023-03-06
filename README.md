@@ -1,7 +1,7 @@
 # Canvas-painting-language
 
 The language:
-# <Peakasso> -> PROGRAM <ID> ; <Canvas Init Section> <Brush Declaration Section> <Drawing Section>
+// <Peakasso> -> PROGRAM <ID> ; <Canvas Init Section> <Brush Declaration Section> <Drawing Section>
 # <Canvas Init Section> -> CANVAS-INIT-SECTION : <Canvas Size Init> <Cursor Pos Init>
 # <Canvas Size Init> -> CONST CanvasX = int_lit ; CONST CanvasY = int_lit ;
 # <Cursor Pos Init> -> CursorX = int_lit ; CursorY = int_lit ;
