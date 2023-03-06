@@ -1,0 +1,27 @@
+!! Here is an example of a sample program code in the Peakasso language:
+
+PROGRAM example;
+
+CANVAS-INIT-SECTION:
+CONST CanvasX = 100;
+CONST CanvasY = 100;
+CursorX = 1;
+CursorY = 1;
+
+BRUSH-DECLARATION-SECTION:
+BRUSH square = 1 1, circle = 2 2, triangle = 3 3;
+
+DRAWING-SECTION:
+MOVE CursorX TO 10;
+MOVE CursorY TO 10;
+PAINT-CANVAS square;
+
+MOVE CursorX TO 30;
+MOVE CursorY TO 30;
+PAINT-CANVAS circle;
+
+MOVE CursorX TO 50;
+MOVE CursorY TO 50;
+PAINT-CANVAS triangle;
+
+EXHIBIT-CANVAS;
