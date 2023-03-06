@@ -1,25 +1,25 @@
 # Canvas-painting-language
 
 The language:
-<Peakasso> -> PROGRAM <ID> ; <Canvas Init Section> <Brush Declaration Section> <Drawing Section>
-<Canvas Init Section> -> CANVAS-INIT-SECTION : <Canvas Size Init> <Cursor Pos Init>
-<Canvas Size Init> -> CONST CanvasX = int_lit ; CONST CanvasY = int_lit ;
-<Cursor Pos Init> -> CursorX = int_lit ; CursorY = int_lit ;
-<Brush Declaration Section> -> BRUSH-DECLARATION-SECTION : [ <Variable Def> ]
-<Variable Def> -> BRUSH <Brush List> ;
-<Brush List> -> <Brush Name> | <Brush Name>, <Brush List>
-<Brush Name> -> <ID> [= int_lit int_lit ]
-<ID> | id
-<Drawing Section> -> DRAWING-SECTION : { <Statement>; }
-<Statement> -> <Renew Stmt> | <Paint Stmt> | <Exhibit Stmt> | <Cursor Move Stmt>
-<Renew Stmt> -> RENEW-BRUSH 'message ' <Brush Name>
-<Paint Stmt> -> PAINT-CANVAS <Brush Name>
-<Exhibit Stmt> -> EXHIBIT-CANVAS
-<Cursor Move Stmt> -> MOVE <Cursor> TO <Expression>
-<Cursor> -> CursorX | CursorY
-<Expression> -> <Term> | <Expression> (PLUS | MINUS) <Term>
-<Term> -> <Factor>
-<Factor> -> int_lit | <Cursor> | CanvasX | CanvasY | ( <Expression> )
+* <Peakasso> -> PROGRAM <ID> ; <Canvas Init Section> <Brush Declaration Section> <Drawing Section>
+* <Canvas Init Section> -> CANVAS-INIT-SECTION : <Canvas Size Init> <Cursor Pos Init>
+* <Canvas Size Init> -> CONST CanvasX = int_lit ; CONST CanvasY = int_lit ;
+* <Cursor Pos Init> -> CursorX = int_lit ; CursorY = int_lit ;
+* <Brush Declaration Section> -> BRUSH-DECLARATION-SECTION : [ <Variable Def> ]
+* <Variable Def> -> BRUSH <Brush List> ;
+* <Brush List> -> <Brush Name> | <Brush Name>, <Brush List>
+* <Brush Name> -> <ID> [= int_lit int_lit ]
+* <ID> | id
+* <Drawing Section> -> DRAWING-SECTION : { <Statement>; }
+* <Statement> -> <Renew Stmt> | <Paint Stmt> | <Exhibit Stmt> | <Cursor Move Stmt>
+* <Renew Stmt> -> RENEW-BRUSH 'message ' <Brush Name>
+* <Paint Stmt> -> PAINT-CANVAS <Brush Name>
+* <Exhibit Stmt> -> EXHIBIT-CANVAS
+* <Cursor Move Stmt> -> MOVE <Cursor> TO <Expression>
+* <Cursor> -> CursorX | CursorY
+* <Expression> -> <Term> | <Expression> (PLUS | MINUS) <Term>
+* <Term> -> <Factor>
+* <Factor> -> int_lit | <Cursor> | CanvasX | CanvasY | ( <Expression> )
 
 Other key information about the language is as follows:
 
